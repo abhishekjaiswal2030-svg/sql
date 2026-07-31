@@ -1,0 +1,11 @@
+create database it_vedanta;
+use it_vedanta;
+create table accounts(Account_Id int, Account_type varchar(50),Balance decimal(10,2));
+create table transactions(transaction_id int, transaction_Date date, Amount decimal(10,2),transaction_type varchar(20));
+create table Branches(Branch_id int, Branch_name varchar(100),Branch_Address varchar(100),Branch_phone varchar(15));
+create table AccontBranches(Assignment_date date );
+create table Loans(Loan_id int ,Loan_Amount decimal(10,2) ,Interst_rate decimal(10,2),Start_date date ,End_Date Date);
+alter table accounts add column DOB date;
+alter table accounts drop column dOB;
+create table Customers(First_name varchar(50),Last_name varchar(50),Email varchar(50), Phone varchar(50) );
+alter table customers add column DOB date;
