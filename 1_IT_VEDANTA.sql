@@ -100,6 +100,38 @@ select count(Balance) from Accounts;
 select sum(Balance) from Accounts; 
 SELECT * FROM Accounts ORDER BY  Balance;
 SELECT * FROM Accounts ORDER BY  Balance desc;
-SELECT * FROM 
+
+
+SELECT * FROM Customers WHERE FirstName LIKE '%a' limit 1 ;
+
+SELECT * FROM Customers WHERE Email  LIKE '%gmail%' ;
+
+SELECT * FROM Accounts WHERE Accounttype LIKE 'R%' limit 1 ;
+
+SELECT * FROM Accounts WHERE Accounttype  IN  ('savings','current');
+
+SELECT * FROM Accounts WHERE Accounttype in (balance>40000,balance<10000);
+
+SELECT * FROM Accounts WHERE Accounttype in (balance>40000,balance<10000,balance=40000);
+
+SELECT * FROM Accounts WHERE  balance between 10000 and 40000;
+
+SELECT * FROM Accounts ORDER BY Balance DESC limit 3 offset 2;
+
+SELECT * FROM Accounts ORDER BY Balance DESC limit 3 ;
+
+SELECT * FROM Transactions LIMIT 5 OFFSET 3;
+
+SELECT * FROM Transactions WHERE TransactionType IN ('Deposit','Withdrawal') ORDER BY TransactionDate DESC;
+
+
+SELECT * FROM Customers WHERE FirstName LIKE 'S%' LIMIT 5;
+
+SELECT * FROM Accounts WHERE AccountType = 'Savings' ORDER BY Balance DESC;
+
+
+
+
+
 
 
