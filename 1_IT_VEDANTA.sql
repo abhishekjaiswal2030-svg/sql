@@ -65,7 +65,7 @@ VALUES
 
 select*from Transactions;
 
-SELECT TransactionType, COUNT(*) FROM Transactions GROUP BY TransactionType;
+SELECT TransactionType, COUNT(*) FROM Transactions GROUP BY TransactionType ;
 
 SELECT TransactionType, sum(Amount) FROM Transactions GROUP BY TransactionType;
 
@@ -98,7 +98,7 @@ select max(Balance) from Accounts;
 select min(Balance) from Accounts;
 select count(Balance) from Accounts;
 select sum(Balance) from Accounts; 
-SELECT * FROM Accounts ORDER BY  Balance;
+SELECT * FROM Accounts ORDER BY  Balance ASC ;
 SELECT * FROM Accounts ORDER BY  Balance desc;
 
 
